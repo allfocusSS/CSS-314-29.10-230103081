@@ -1,0 +1,40 @@
+{
+  "N": 1024,
+  "iters": 50,
+  "P_list": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "amdahl": {
+    "serial_fraction_s_lsq": 1.0292938597729082,
+    "serial_fraction_s_at_each_P": {
+      "2": 1.3470837600030405,
+      "4": 0.9154405119159102,
+      "8": 1.009173086694741
+    },
+    "max_asymptotic_speedup_1_over_s": 0.9715398479309191,
+    "note": "s lumps true serial work (init/reduction) with barrier cost and memory-bandwidth saturation"
+  },
+  "gustafson": {
+    "serial_fraction_g_lsq": 0.9000004460127197,
+    "scaled_speedup_at_each_P": {
+      "2": 1.192422238207011,
+      "4": 1.6126948065221278,
+      "8": 1.552781003925164
+    },
+    "weak_efficiency_pct_at_each_P": {
+      "2": 59.55156912433147,
+      "4": 40.3173701630532,
+      "8": 19.400509352596224
+    }
+  },
+  "contrast": {
+    "P": 8,
+    "strong_efficiency_pct": 12.40046825096867,
+    "weak_efficiency_pct": 19.400509352596224,
+    "weak_minus_strong_efficiency_pct_points": 7.000041101627554,
+    "note": "Interpret yourself: weak scaling normally keeps efficiency higher than strong scaling because per-process work stays constant, but a bandwidth-bound kernel or a cache-size change between N and N_P can reverse that."
+  }
+}

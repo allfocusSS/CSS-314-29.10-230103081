@@ -1,0 +1,34 @@
+{
+  "kernel": "5-point Jacobi stencil, float64",
+  "flops_per_point": 4,
+  "dram_bytes_per_point": {
+    "streaming_with_write_allocate": 24,
+    "with_nontemporal_stores": 16,
+    "assumption": "each source value is loaded from DRAM once (neighbouring rows are reused from cache), each destination value written once"
+  },
+  "arithmetic_intensity_flop_per_byte": 0.16666666666666666,
+  "arithmetic_intensity_nontemporal_stores": 0.25,
+  "machine": {
+    "peak_gflops": 220.0,
+    "peak_gflops_source": "user supplied",
+    "peak_bandwidth_gbs": 100.0,
+    "peak_bandwidth_source": "user supplied theoretical peak",
+    "measured_single_thread_copy_bandwidth_gbs": 78.84339226492958,
+    "ridge_point_flop_per_byte": 2.2,
+    "cache_bytes": {
+      "l1d": 65536,
+      "l2": 4194304,
+      "l3": null
+    }
+  },
+  "working_set_bytes_two_grids": 16777216,
+  "working_set_fits_in_l3": null,
+  "achieved": {
+    "P": 8,
+    "gflops": 1.6134622393917448,
+    "effective_bandwidth_gbs_model": 9.680773436350469,
+    "fraction_of_bandwidth_roof": 0.09680773436350469
+  },
+  "regime": "memory-bandwidth bound",
+  "conclusion": "AI = 0.167 FLOP/B vs ridge point 2.20 FLOP/B -> memory-bandwidth bound. Bandwidth roof at this AI = 16.67 GFLOP/s, compute peak = 220 GFLOP/s. Check peak_bandwidth_source: a single-thread copy measurement understates the multi-core peak."
+}
