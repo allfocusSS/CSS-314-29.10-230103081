@@ -1,0 +1,38 @@
+{
+  "student_id": "230103081",
+  "N": 1024,
+  "M": 512,
+  "seed": 26334,
+  "backend": "c",
+  "compiler": "/usr/bin/cc",
+  "cflags": [
+    "-O1",
+    "-ffp-contract=off",
+    "-fno-tree-vectorize",
+    "-shared",
+    "-fPIC"
+  ],
+  "runs": 3,
+  "naive_ijk_times_ns": [
+    119586333,
+    118838833,
+    119345625
+  ],
+  "interchanged_ikj_times_ns": [
+    44013458,
+    43600834,
+    43693083
+  ],
+  "naive_ijk_median_ns": 119345625,
+  "interchanged_ikj_median_ns": 43693083,
+  "naive_ijk_median_s": 0.119345625,
+  "interchanged_ikj_median_s": 0.043693083,
+  "speedup_naive_over_interchanged": 2.73145351176066,
+  "max_abs_diff_naive_vs_interchanged": 0.0,
+  "tolerance": 1e-12,
+  "within_tolerance": true,
+  "max_abs_diff_vs_numpy_matmul_informational": 8.526512829121202e-14,
+  "sha256_round6_naive": "4b4b0ac49dad20519b42e89715ed14c11676076254f0b896c22c8332f199b5b6",
+  "sha256_round6_interchanged": "4b4b0ac49dad20519b42e89715ed14c11676076254f0b896c22c8332f199b5b6",
+  "checksum_sum_C": 33603686.46153657
+}
