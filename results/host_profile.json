@@ -1,0 +1,31 @@
+{
+  "os": "Darwin",
+  "kernel": "25.5.0",
+  "kernel_version": "Darwin Kernel Version 25.5.0: Mon Apr 27 20:40:51 PDT 2026; root:xnu-12377.121.6~2/RELEASE_ARM64_T8112",
+  "machine": "arm64",
+  "python": {
+    "implementation": "CPython",
+    "version": "3.13.0",
+    "compiler": "Clang 15.0.0 (clang-1500.3.9.4)",
+    "executable": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "numpy": "2.2.2"
+  },
+  "cpu_model": "Apple M2",
+  "microarchitecture": "Apple Silicon (arm64)",
+  "base_frequency_ghz": null,
+  "base_frequency_source": null,
+  "physical_cores": 8,
+  "logical_threads": 8,
+  "smt_enabled": false,
+  "threads_per_core": 1,
+  "usable_cpus_for_this_process": 8,
+  "cache": {
+    "l1d_bytes": 65536,
+    "l2_bytes": 4194304,
+    "l3_bytes": null,
+    "line_size_bytes": 128,
+    "line_size_source": "sysfs/sysctl",
+    "note": "L1d/L2 are per-core, L3 is shared across cores (per-instance values)."
+  },
+  "total_ram_bytes": null
+}
